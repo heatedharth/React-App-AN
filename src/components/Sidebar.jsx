@@ -30,22 +30,22 @@ export default function Sidebar({ initialMenuItems }) {
     // its own item.
     return (
         <div>
-            <input>
+            <input
                 type="text"
                 id="newMenuItemValue"
                 value={newMenuItem}
                 onChange={(event) => setNewMenuItem(event.target.value)}
-            </input>
+            />
             <br />
             <button onClick={addMenuItem}>Add Item</button>
             <br />
-            <input>
+            <input
                 id="filter"
                 type="text"
                 value={filter}
                 onChange={(event) => setFilter(event.target.value)}
                 placeholder="Filter by..."
-            </input>
+            />
             <br />
             <ul>
                 {filteredMenuItems.map((item, index) => (
